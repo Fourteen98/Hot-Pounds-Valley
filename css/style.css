@@ -1,0 +1,767 @@
+@import "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap";
+
+@font-face {
+  font-family: COCOGOOSE;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("COCOGOOSE"),
+    url("https://fonts.cdnfonts.com/s/26936/cocogoose_trial.woff")
+    format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  color: rgb(51 51 51);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #f14000 !important;
+}
+
+li {
+  list-style: none;
+}
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  padding: 51px 5% 0;
+  background-image: url("/images/mobile_intro_bg.png");
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-section .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15% 10% 30%;
+}
+
+.home-section .main #intro {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: orangered;
+}
+
+@media screen and (min-width: 768px) {
+  .home-section .main #intro {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.home-section .main #broadcast {
+  font-size: 2rem;
+  font-weight: 1000;
+  color: orangered;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .home-section .main #broadcast {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+  }
+}
+
+.home-section .main #about-intro {
+  font-size: 47px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.home-section .main #about-broadcast {
+  font-size: 1rem;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.home-section .main .first-inner-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 22px;
+  padding: 4px;
+  border: 4px solid rgb(255 255 255);
+  background-color: rgb(247 247 248);
+}
+
+.home-section .main .first-inner-main .email {
+  font-weight: 800;
+  padding: 0 0 0.4rem;
+}
+
+.home-section .main .first-inner-main .email-link {
+  color: rgb(51 51 51);
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .home-section .main .first-inner-main {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.broadcast-about-program p {
+  color: rgb(51 51 51);
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.about-footer .footer-container p {
+  color: white;
+}
+
+.home-section .main .first-inner-main p {
+  font-size: 1.2rem;
+  line-height: 150%;
+  text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .home-section .main .first-inner-main p {
+    text-align: center;
+  }
+}
+
+.home-section .main .second-inner-main {
+  display: flex;
+  margin-top: 10rem;
+  padding: 40px 0 0;
+  border: 4px solid rgb(255 255 255);
+  background-color: rgb(247 247 248);
+  align-items: center;
+  justify-content: center;
+}
+
+.home-section .main .second-inner-main p {
+  font-size: 25px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.home-section .main .broadcast-first-inner-main {
+  margin: 0 auto 33px;
+  display: flex;
+  padding: 4px;
+  border: 1px solid rgb(223 223 223);
+  background-color: rgb(255 255 255);
+}
+
+.home-section .main .broadcast-first-inner-main p {
+  font-size: 25px;
+  text-align: justify;
+}
+
+footer img {
+  width: 25%;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-description p {
+    font-size: 1.2rem;
+  }
+}
+
+.home-section .main .broadcast-second-inner-main {
+  display: flex;
+  margin: 0 auto 33px;
+  padding: 40px;
+  background-color: rgb(247 247 248);
+  align-items: center;
+  justify-content: center;
+}
+
+.home-section .main .broadcast-second-inner-main p {
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.about-program {
+  background: rgb(39 42 50) url("/images/pattern_bg.png") repeat top center;
+  background-attachment: fixed;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-program .main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10rem 0 8px;
+  justify-content: center;
+}
+
+.about-program .main .main-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-sponsors .main-heading h4 {
+  font-size: 42px;
+  padding-bottom: 1rem;
+}
+
+.about-program .main .main-heading h4 {
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.broadcast-about-program .bar {
+  width: 20%;
+  height: 2%;
+  border-bottom: 2px solid rgb(239 81 60);
+  margin: 0 auto 54px;
+}
+
+.main-sponsors .bar {
+  width: 20%;
+  height: 2%;
+  border-bottom: 2px solid rgb(239 81 60);
+  margin: 0 auto 54px;
+}
+
+.about-program .main .main-heading .bar {
+  width: 20%;
+  height: 2%;
+  border-bottom: 2px solid rgb(239 81 60);
+  margin: 0 auto 54px;
+}
+
+.about-program .main .main-program {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  width: 100%;
+}
+
+.about-program .main .main-program .program {
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+  background-color: rgb(255 255 255 / 10%);
+}
+
+.about-program .main .main-program .program .program-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.main-sponsors .sponsor-div img {
+  width: 15%;
+}
+
+.broadcast-about-program .about-logo img {
+  width: 100%;
+}
+
+.about-program .main .main-program .program .program-icon img {
+  width: 50px;
+}
+
+.past .main .main-heading h5 {
+  color: rgb(51 51 51);
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.about-program .main .main-program .program .program-icon h5 {
+  color: rgb(239 81 60);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.about-program .main .main-program .program .program-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-program .main .view {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-program .main .view span {
+  color: white;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.mobile-header li a i {
+  color: black;
+  padding-bottom: 4rem;
+}
+
+.about-program .main .view i {
+  color: white;
+}
+
+.about-program .main .join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5%;
+}
+
+.about-program .main .join a {
+  background-color: orangered;
+  padding: 5%;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* about-program .main .join a:hover {
+  background-color: green;
+  padding: 5%;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+} */
+
+.featured-speakers {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.featured-speakers .main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+  padding-bottom: 80px;
+}
+
+.featured-speakers .main .main-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.featured-speakers .main .main-heading h4 {
+  color: #272a32;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .featured-speakers .main .main-heading h4 {
+    font-size: 35px;
+  }
+}
+
+.featured-speakers .main .main-heading .bar {
+  width: 20%;
+  height: 2%;
+  border-bottom: 2px solid rgb(239 81 60);
+  margin: 0 auto 54px;
+}
+
+.featured-speakers .main .speaker-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.featured-speakers .main .speaker-list h4 {
+  color: #ec5242;
+  font-style: italic;
+}
+
+.featured-speakers .main .speaker-list h3 {
+  color: #272a31;
+}
+
+.featured-speakers .main .speaker-list .speaker-list-grid {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-speakers .main .speaker-list .speaker-list-grid {
+    padding: 50px 20px;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.featured-speakers .main .speaker-list .speaker-list-grid .speaker {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  max-width: 500px;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-speakers .main .speaker-list .speaker-list-grid .speaker {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    max-width: 450px;
+  }
+}
+
+.featured-speakers .main .speaker-list .speaker-list-grid .speaker .speaker-img {
+  width: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-speakers .main .speaker-list .speaker-list-grid .speaker .speaker-img {
+    width: 150px;
+  }
+}
+
+.featured-speakers .main .speaker-list .speaker-list-grid .speaker .speaker-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  flex: 2;
+}
+
+.featured-speakers .main .more {
+  border: 1px solid #272a32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5% 0;
+}
+
+.featured-speakers .main .more a {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-menu .menu .about span {
+  align-items: center;
+  text-align: center;
+  font-size: 43px;
+  color: #272a32;
+}
+
+.featured-speakers .main .more a span {
+  font-size: 28px;
+}
+
+.side-menu .menu .about i {
+  color: #272a32;
+}
+
+.featured-speakers .main .more a i {
+  color: #ff4f38;
+}
+
+.broadcast-about-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 51px 5% 5%;
+}
+
+.broadcast-about-program .about-logo {
+  width: 100%;
+}
+
+.past {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 51px 5% 0;
+  border-top: 1px solid black;
+}
+
+.past .main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+  padding-bottom: 80px;
+}
+
+.past .main .main-heading .bar {
+  width: 20%;
+  height: 2%;
+  border-bottom: 2px solid rgb(239 81 60);
+  margin: 0 auto 54px;
+}
+
+.past .main .event-images {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.past .main .event-images #event-image-1 {
+  width: 100%;
+  height: 25rem;
+  background-image: url("/images/about_2013.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.past .main .event-images #event-image-2 {
+  width: 100%;
+  height: 25rem;
+  background-image: url("/images/about_2011.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.side-menu {
+  padding: 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("/images/mobile_intro_bg.png");
+  background-color: seashell;
+}
+
+.side-menu .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.side-menu .menu .x-icon {
+  width: 100%;
+  color: #272a32;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.side-menu .menu .about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 30%;
+  height: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+
+  .main-desktop-header {
+    display: flex;
+    width: 100%;
+    min-height: 4rem;
+    background-color: white;
+    flex-direction: column;
+    position: fixed;
+    box-shadow: rgb(0 0 0 / 9%) 0 3px 12px;
+  }
+
+  .main-desktop-header .desktop-header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #272a32;
+    padding: 5px 10%;
+    height: 2rem;
+  }
+
+  .main-desktop-header .desktop-header .toppest-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10%;
+  }
+
+  .main-desktop-header .desktop-header .toppest-header span {
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .main-desktop-header .desktop-nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0 10%;
+    min-height: 7rem;
+    gap: 20%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .main-desktop-header .desktop-nav .desktop-image {
+    width: 20%;
+  }
+
+  .main-desktop-header .desktop-nav .desktop-pages {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+  }
+
+  .main-desktop-header .desktop-nav .desktop-pages a {
+    font-weight: 600;
+  }
+
+  .main-desktop-header .desktop-nav .desktop-pages span {
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-desktop-header {
+    display: none;
+  }
+
+  .speaker-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-program {
+    display: flex !important;
+  }
+
+  .main-program .program {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .main-program .program .program-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem !important;
+  }
+
+  .main-program .program .program-description {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+  }
+
+  .main-program .program .program-description p {
+    text-align: center;
+  }
+
+  .event-images {
+    display: flex;
+    flex-direction: row !important;
+  }
+}
+
+.display-active {
+  display: flex;
+}
+
+.main-sponsors {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background-color: #272a31;
+  padding: 40px;
+}
+
+.main-sponsors .sponsor-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+footer {
+  padding: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.about-footer {
+  background-color: #272a31;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 2% 30%;
+  }
+}
+
+footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.past .main .main-heading p {
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 50px;
+}
+
+.about-program .main .main-program .program .program-description p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
